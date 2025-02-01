@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reparare PC - Ghid Online</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Ghid de Reparare PC</h1>
+    </header>
+    <main>
+        <h2>Alege problema pe care o întâmpini:</h2>
+        <select id="problema">
+            <option value="">-- Selectează o problemă --</option>
+            <option value="lent">PC-ul este lent</option>
+            <option value="internet">Internetul nu funcționează</option>
+            <option value="eroare">Eroare Windows</option>
+            <option value="pornire">PC-ul nu pornește</option>
+            <option value="inchidere">PC-ul se închide brusc</option>
+            <option value="sunet">Sunetul nu funcționează</option>
+        </select>
+        <button onclick="afiseazaSolutie()">Vezi soluția</button>
+        <button onclick="reset()">Resetează</button>
+        <div id="solutie"></div>
+        <div id="tutorial"></div>
+    </main>
+    <section id="comentarii">
+        <h2>Lasă un comentariu</h2>
+        <textarea id="comentariu" placeholder="Scrie întrebarea ta aici..."></textarea>
+        <button onclick="adaugaComentariu()">Trimite</button>
+        <div id="lista-comentarii"></div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
